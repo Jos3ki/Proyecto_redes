@@ -1,0 +1,53 @@
+Fases de la Metodología Espiral 
+
+1. Planificación (Planning)
+En esta fase, defines el alcance, los objetivos y las alternativas para la iteración actual.
+
+Objetivos del Ciclo:
+
+Primer Ciclo: Enfocarse en la viabilidad. ¿Qué tipo de escaneo se necesita (puertos, sistemas operativos, servicios)? ¿Qué bibliotecas o herramientas de código abierto se podrían usar (ej. Nmap, Scapy)?
+
+Ciclos Posteriores: Aumentar la funcionalidad (ej. añadir detección de vulnerabilidades específicas, mejorar la interfaz de usuario, optimizar la velocidad).
+
+Restricciones y Alternativas: Definir la plataforma, lenguajes de programación (ej. Python por sus bibliotecas de red), presupuesto y plazos.
+
+2. Análisis y Evaluación de Riesgos (Risk Analysis)
+Esta es la fase más crítica del modelo Espiral.
+
+Identificación de Riesgos Clave:
+
+Riesgo Técnico: ¿Puede el software de escaneo ser detectado o bloqueado por sistemas de seguridad (IDS/IPS)? ¿Es precisa la identificación de la versión del servicio?
+
+Riesgo de Requisitos: ¿Son suficientes los requisitos de rendimiento (velocidad de escaneo, manejo de redes grandes)?
+
+Riesgo de Seguridad: ¿Podría el escaneo dañar o desestabilizar la red objetivo? (Es crucial para una herramienta de seguridad ética).
+
+Riesgo de Integración: ¿Funcionarán las herramientas de terceros seleccionadas (si las hay) correctamente juntas?
+
+Mitigación: Desarrollar prototipos para probar los riesgos identificados. Por ejemplo, crear un pequeño prototipo que solo escanee un puerto específico para evaluar el rendimiento y la discreción.
+
+3. Ingeniería y Desarrollo (Engineering)
+En esta etapa, se diseña, implementa y prueba el componente de la iteración.
+
+Diseño: Crear la arquitectura del módulo de escaneo (ej. cómo se gestionan los hilos para el escaneo concurrente).
+
+Implementación (Codificación): Escribir el código para el prototipo o la funcionalidad planificada (ej. el módulo de escaneo de puertos inicial).
+
+Verificación y Pruebas:
+
+Pruebas Unitarias: Asegurar que cada componente de escaneo funciona como se espera.
+
+Pruebas de Integración: Verificar que el nuevo módulo se conecta correctamente con el resto del sistema (ej. cómo almacena los resultados en la base de datos).
+
+Pruebas de Seguridad: Ejecutar el escáner contra una red controlada para asegurar que solo hace lo que debe y no causa efectos adversos.
+
+4. Evaluación del Cliente y Planificación del Siguiente Ciclo (Evaluation)
+Aquí se revisa el resultado del ciclo con el cliente o stakeholders.
+
+Revisión: El cliente o un experto en seguridad evalúa el prototipo funcional o el incremento de software. Se revisa si cumple los objetivos de la iteración (ej. ¿El escaneo es preciso? ¿La interfaz de usuario es intuitiva?).
+
+Retroalimentación: Se recopila feedback para determinar si hay nuevos riesgos, requisitos o funcionalidades pendientes.
+
+Decisión: Se decide si el proyecto debe continuar con el siguiente ciclo (refinando o añadiendo funcionalidad) o si está terminado.
+
+Planificación: Se planifican los objetivos para la siguiente vuelta de la espiral, centrándose en los riesgos residuales o en las nuevas funcionalidades.
