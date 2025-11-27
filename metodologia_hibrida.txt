@@ -1,0 +1,49 @@
+Modelo Híbrido Propuesto: Espiral + Scrum
+1. Justificación de la Elección
+Este modelo híbrido es la elección ideal para tu proyecto por las siguientes razones:
+
+Alto Riesgo e Incertidumbre (Espiral): Un software de ciberseguridad debe ser extremadamente preciso, eficiente y seguro. Existe un alto riesgo técnico (ej. velocidad de escaneo, precisión en la identificación de vulnerabilidades, evitar falsos positivos). La metodología Espiral está diseñada específicamente para mitigar estos riesgos a través de un análisis profundo en cada ciclo.
+
+Necesidad de Adaptación y Velocidad (Scrum): El panorama de las vulnerabilidades cambia constantemente. Necesitas la capacidad de adaptación y la entrega rápida de funcionalidades. Scrum proporciona el marco de trabajo ágil necesario para integrar nuevos requisitos o mitigar riesgos rápidamente mediante Sprints.
+
+
+Aplicación en el Proyecto
+El modelo funcionará como una Matriz: los ciclos de la Espiral definirán las grandes fases de desarrollo, y dentro de cada ciclo de la Espiral se aplicarán los Sprints de Scrum para la ejecución detallada.
+
+ Macro Gestión: El Ciclo Espiral (Definición del Alcance)
+La Espiral se utilizará para definir los grandes hitos del producto y gestionar los riesgos principales.
+
+Ciclo 1: Prototipo Mínimo Viable (PMV)
+
+Objetivo: Desarrollar el core del escáner de red (escaneo de puertos y detección de sistemas operativos).
+
+Riesgo a Mitigar: Viabilidad técnica, rendimiento y latencia.
+
+Fase de Ingeniería (Scrum): Se asignarán 2-3 Sprints para construir y probar esta funcionalidad.
+
+Ciclo 2: Funcionalidad Central de Vulnerabilidades
+
+Objetivo: Integrar una base de datos de vulnerabilidades (CVEs) y generar informes básicos.
+
+Riesgo a Mitigar: Precisión de los resultados (evitar falsos positivos).
+
+Fase de Ingeniería (Scrum): Se asignarán 3-4 Sprints enfocados en la lógica de correlación de datos y la interfaz de usuario.
+
+Ciclo 3: Refinamiento y Despliegue
+
+Objetivo: Optimización, seguridad de la herramienta y creación de la documentación final.
+
+Riesgo a Mitigar: Usabilidad y robustez del código.
+
+ Micro Gestión: Los Sprints de Scrum (Ejecución Detallada)
+Dentro de la Fase de Ingeniería de cada Ciclo Espiral, se aplicará el marco Scrum:
+
+Product Backlog: Se mantendrá un listado priorizado de las tareas detalladas para el objetivo del ciclo Espiral (ej. "Implementar detección de SSH", "Crear la tabla de resultados en el GUI").
+
+Sprint Planning: Al inicio de cada Sprint (ej. cada 2 semanas), se seleccionan tareas del Product Backlog que contribuyen al objetivo del ciclo Espiral.
+
+Daily Scrum: Reuniones diarias de 15 minutos para sincronizar al equipo y detectar impedimentos que puedan convertirse en riesgos.
+
+Sprint Review: Al final del Sprint, se revisa la funcionalidad desarrollada con el equipo y stakeholders. Si el resultado no mitiga el riesgo esperado, se planifica un nuevo Sprint para corregirlo.
+
+Sprint Retrospective: Se utiliza para mejorar el proceso de desarrollo en sí mismo.
