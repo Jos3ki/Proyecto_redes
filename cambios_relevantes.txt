@@ -1,0 +1,14 @@
+en este proyecto se han realizado cambios con sus respectivos Commits y en dado caso en que el cambio o la implementación allá sido de un impacto muy grande 
+se creo una rama dedicada a este cambio para evitar romper el proyecto
+
+Commits mas relevantes 
+
+la implementación de detccion de mac address al equipo escaneado
+
+la implementación de apis para la inserción de datos ala BD 
+
+la implmenetacion de nuevos scaneos para sacar mas métricas del equipos 
+
+
+
+la cuestión es que git me a ayudado no solo a llevar el versionamiento del proyecto sino para ver el progreso de proyecto, ver los avances y la evolución que a tenido 
